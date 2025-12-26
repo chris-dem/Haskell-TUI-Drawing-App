@@ -13,6 +13,10 @@ dependencies:
   - vector-space
   - lens
   - random
+  - mtl
+  - stm
+  - async
+  - monad-loops
 
 
 # Hpack generates .cabal version automatically.
@@ -43,6 +47,4 @@ executables:
     language: GHC2024
     dependencies:
       - app
-      - stm
-      - async
 

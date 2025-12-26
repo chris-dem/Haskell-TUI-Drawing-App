@@ -22,6 +22,7 @@ data Image = Image
     { _pixels :: VS.Vector (Word8, Word8, Word8)
     , _dims :: (Int, Int)
     }
+    deriving Show
 
 makeLenses ''Image
 

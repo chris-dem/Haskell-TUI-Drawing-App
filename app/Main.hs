@@ -10,6 +10,7 @@ import Control.Concurrent.STM
 import GHC.IO.Handle (BufferMode (NoBuffering), hSetBuffering)
 import Lib.ConsoleManipulation
 import Lib.Image
+import Lib.StateLib
 import System.IO
 
 main :: IO ()
@@ -23,22 +24,5 @@ main = do
             k <- getChar
             atomically $ writeTQueue keyQueue k
     withAsync listener $ \_ -> do
-        renderLoop keyQueue
+        evalStateT (mainLoop keyQueue)
     return ()
-
-renderLoop :: TQueue Char -> IO ()
-renderLoop queue = do
-    -- 1. Try to see if a key was pressed (Non-blocking check)
-    maybeKey <- atomically $ readTQueue queue
-
-    x <- case maybeKey of
-        'q' -> putStrLn "Quitting..." >> return True
-        _ -> return False
-    unless x $ do
-        -- 2. Draw your image
-        -- drawImage myImage
-        putStrLn "Printing Image"
-        threadDelay 50000 -- 20 FPS
-        renderLoop queue
-
--- Use StateT s m a in orde

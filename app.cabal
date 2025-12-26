@@ -17,17 +17,22 @@ library
       Lib.ConsoleManipulation
       Lib.CoordAlg
       Lib.Image
+      Lib.StateLib
   other-modules:
       Paths_app
   hs-source-dirs:
       lib
   build-depends:
       ansi-terminal
+    , async
     , base
     , colour
     , containers
     , lens
+    , monad-loops
+    , mtl
     , random
+    , stm
     , vector
     , vector-space
     , word8
@@ -47,6 +52,8 @@ executable app
     , colour
     , containers
     , lens
+    , monad-loops
+    , mtl
     , random
     , stm
     , vector
@@ -61,6 +68,7 @@ test-suite spec
       Lib.ConsoleManipulation
       Lib.CoordAlg
       Lib.Image
+      Lib.StateLib
       Paths_app
   hs-source-dirs:
       test
@@ -68,12 +76,16 @@ test-suite spec
   cpp-options: -DTest
   build-depends:
       ansi-terminal
+    , async
     , base
     , colour
     , containers
     , hedgehog
     , lens
+    , monad-loops
+    , mtl
     , random
+    , stm
     , tasty
     , tasty-hedgehog
     , tasty-hunit

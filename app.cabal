@@ -1,0 +1,84 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.39.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           app
+version:        0.1.0.0
+synopsis:       Sample miso app
+category:       Web
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+
+library
+  exposed-modules:
+      Lib.ConsoleManipulation
+      Lib.CoordAlg
+      Lib.Image
+  other-modules:
+      Paths_app
+  hs-source-dirs:
+      lib
+  build-depends:
+      ansi-terminal
+    , base
+    , colour
+    , containers
+    , lens
+    , random
+    , vector
+    , vector-space
+    , word8
+  default-language: GHC2024
+
+executable app
+  main-is: Main.hs
+  other-modules:
+      Paths_app
+  hs-source-dirs:
+      app
+  build-depends:
+      ansi-terminal
+    , app
+    , async
+    , base
+    , colour
+    , containers
+    , lens
+    , random
+    , stm
+    , vector
+    , vector-space
+    , word8
+  default-language: GHC2024
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Lib.ConsoleManipulation
+      Lib.CoordAlg
+      Lib.Image
+      Paths_app
+  hs-source-dirs:
+      test
+      lib
+  cpp-options: -DTest
+  build-depends:
+      ansi-terminal
+    , base
+    , colour
+    , containers
+    , hedgehog
+    , lens
+    , random
+    , tasty
+    , tasty-hedgehog
+    , tasty-hunit
+    , template-haskell
+    , vector
+    , vector-space
+    , word8
+  default-language: GHC2024

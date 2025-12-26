@@ -13,6 +13,7 @@ import Control.Monad
 import Control.Monad.Loops
 import Control.Monad.State
 import Data.Maybe (isNothing)
+import Debug.Trace
 
 import Lib.CoordAlg
 import Lib.Image
@@ -31,25 +32,24 @@ makeLenses ''AppState
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-data Actions = Exit | RenderImage [Int]
+data Actions = Exit | RenderImage
 
 keyboardManagement :: Char -> StateT AppState IO Actions
 keyboardManagement 'q' = do
     liftIO (putStrLn "Quitting...")
+    gets (set shouldExit True) >>= put
     return Exit
 keyboardManagement _ = undefined
 
-renderImage :: [Int] -> IO ()
-renderImage = undefined
-
 handleAction :: Actions -> StateT AppState IO ()
 handleAction Exit = return ()
-handleAction (RenderImage im) = do
-    liftIO $ renderImage im
+handleAction RenderImage = do
+    im <- gets _currentImage
+    liftIO $ drawImage im
     liftIO $ threadDelay 50000
 
 mainLoop :: TQueue Char -> StateT AppState IO ()
-mainLoop queue = whileM_ (gets (not . _shouldExit)) $ do
+mainLoop queue = whileM_ (gets ((\x -> trace (show x) x) . not . _shouldExit)) $ do
     key <- liftIO $ atomically $ readTQueue queue
     keyboardManagement key >>= handleAction
 

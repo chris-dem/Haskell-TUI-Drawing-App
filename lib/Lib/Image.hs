@@ -48,5 +48,6 @@ drawImage (Image pix (xLim, yLim)) = do
             let i = c + r * xLim
             (r, g, b) <- VS.indexM pix i
             setSGR [SetRGBColor Background $ sRGB24 r g b]
-            putStr " "
+            putStr "-"
         putStrLn ""
+    setCursorPosition 0 0

@@ -46,5 +46,4 @@ fieldSpace (Topos x y b) p =
         & xDim %~ g b x
         & yDim %~ g b y
   where
-    g b = if b then flip mod else min . abs
-
+    g b z = if b then flip mod z else min z . max 0

@@ -49,6 +49,7 @@ executable app
     , app
     , async
     , base
+    , brick
     , colour
     , containers
     , lens
@@ -58,6 +59,7 @@ executable app
     , stm
     , vector
     , vector-space
+    , vty
     , word8
   default-language: GHC2024
 

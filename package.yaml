@@ -47,4 +47,6 @@ executables:
     language: GHC2024
     dependencies:
       - app
+      - brick
+      - vty
 

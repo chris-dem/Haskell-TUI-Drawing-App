@@ -5,18 +5,11 @@ category: Web
 
 dependencies:
   - base
-  - ansi-terminal
-  - word8
-  - colour
   - containers
-  - vector
-  - vector-space
-  - lens
-  - random
-  - mtl
-  - stm
-  - async
-  - monad-loops
+  - text
+  - microlens
+  - microlens-mtl
+  - microlens-th
 
 
 # Hpack generates .cabal version automatically.
@@ -45,6 +38,7 @@ executables:
     main: Main.hs
     source-dirs: app
     language: GHC2024
+    ghc-options: -threaded
     dependencies:
       - app
       - brick

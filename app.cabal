@@ -14,28 +14,18 @@ build-type:     Simple
 
 library
   exposed-modules:
-      Lib.ConsoleManipulation
-      Lib.CoordAlg
-      Lib.Image
       Lib.StateLib
   other-modules:
       Paths_app
   hs-source-dirs:
       lib
   build-depends:
-      ansi-terminal
-    , async
-    , base
-    , colour
+      base
     , containers
-    , lens
-    , monad-loops
-    , mtl
-    , random
-    , stm
-    , vector
-    , vector-space
-    , word8
+    , microlens
+    , microlens-mtl
+    , microlens-th
+    , text
   default-language: GHC2024
 
 executable app
@@ -44,32 +34,23 @@ executable app
       Paths_app
   hs-source-dirs:
       app
+  ghc-options: -threaded
   build-depends:
-      ansi-terminal
-    , app
-    , async
+      app
     , base
     , brick
-    , colour
     , containers
-    , lens
-    , monad-loops
-    , mtl
-    , random
-    , stm
-    , vector
-    , vector-space
+    , microlens
+    , microlens-mtl
+    , microlens-th
+    , text
     , vty
-    , word8
   default-language: GHC2024
 
 test-suite spec
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Lib.ConsoleManipulation
-      Lib.CoordAlg
-      Lib.Image
       Lib.StateLib
       Paths_app
   hs-source-dirs:
@@ -77,22 +58,15 @@ test-suite spec
       lib
   cpp-options: -DTest
   build-depends:
-      ansi-terminal
-    , async
-    , base
-    , colour
+      base
     , containers
     , hedgehog
-    , lens
-    , monad-loops
-    , mtl
-    , random
-    , stm
+    , microlens
+    , microlens-mtl
+    , microlens-th
     , tasty
     , tasty-hedgehog
     , tasty-hunit
     , template-haskell
-    , vector
-    , vector-space
-    , word8
+    , text
   default-language: GHC2024

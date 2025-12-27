@@ -1,29 +1,29 @@
-{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE OverloadedStrings #-}
 
 module Main where
 
-import Data.Colour.SRGB (sRGB24)
-import System.Console.ANSI
+import Control.Applicative ((<|>))
+import Control.Monad (guard)
+import Data.Maybe (fromMaybe)
 
-import Control.Concurrent (threadDelay)
-import Control.Concurrent.Async
-import Control.Concurrent.STM
-import Control.Monad (forever)
-import Control.Monad.State (evalStateT)
-import GHC.IO.Handle (BufferMode (NoBuffering), hSetBuffering)
-import Lib.ConsoleManipulation
-import Lib.Image
+import Lens.Micro.TH (makeLenses)
+
 import Lib.StateLib
-import System.IO
+
+import Brick
+import Brick.Widgets.Center (center)
+import Brick.Widgets.Table
 
 main :: IO ()
-main = do
-    hSetBuffering stdin NoBuffering 
-    hSetEcho stdin False 
-    keyQueue <- newTQueueIO
-    let listener = forever $ do
-            k <- getChar
-            atomically $ writeTQueue keyQueue k
-    makeEmpty >>= \case
-        Just state -> withAsync listener $ const $ evalStateT (mainLoop keyQueue) state
-        Nothing -> return ()
+main = undefined
+
+app :: App () () ()
+app =
+    App
+        { appDraw = drawUI
+        , appChooseCursor = neverShowCursor
+        , appHandleEvent = undefined
+        , appStartEvent  = undefined
+        }
+
+drawUI = undefined

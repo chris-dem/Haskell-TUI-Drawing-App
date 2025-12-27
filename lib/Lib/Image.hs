@@ -50,4 +50,4 @@ drawImage (Image pix (xLim, yLim)) = do
             setSGR [SetRGBColor Background $ sRGB24 r g b]
             putStr "-"
         putStrLn ""
-    setCursorPosition 0 0
+

@@ -5,6 +5,7 @@ category: Web
 
 dependencies:
   - base
+  - linear
   - containers
   - text
   - microlens

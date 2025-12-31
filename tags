@@ -475,7 +475,6 @@ animationMgrTickThreadId	/Users/christosdemetriou/projects/hask-tui-drawing/dist
 animationMode	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	136;"	f
 animationTarget	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	133;"	f
 animations	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	139;"	f
-app	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	20;"	f
 app	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AttrDemo.hs	70;"	f
 app	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/CacheDemo.hs	71;"	f
 app	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/CroppingDemo.hs	51;"	f
@@ -513,6 +512,7 @@ appEvent	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/sr
 appEvent	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/ViewportScrollbarsDemo.hs	123;"	f
 appEvent	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/VisibilityDemo.hs	105;"	f
 appHandleEvent	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Main.hs	114;"	f
+appHandleEventFo	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	38;"	f
 appStartEvent	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Main.hs	117;"	f
 applyAttrMappings	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/AttrMap.hs	202;"	f
 applyColAlignment	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	377;"	f
@@ -623,6 +623,8 @@ clip2	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-1
 clip3	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	82;"	f
 clipLength	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation.hs	108;"	f
 colorDemo	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/BorderDemo.hs	83;"	f
+colouredSquare	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	114;"	f
+colouredStr	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	60;"	f
 columnAlignments	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/TabularListDemo.hs	126;"	f
 columnAlignments	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	95;"	f
 columnBorders	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	183;"	f
@@ -721,11 +723,12 @@ drawAnimations	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/
 drawClickAnimation	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	51;"	f
 drawClickAnimations	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	47;"	f
 drawColumnBorders	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	107;"	f
+drawCoord	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	108;"	f
 drawImage	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/Image.hs	42;"	f
 drawListElements	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/List.hs	338;"	f
 drawRowBorders	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	106;"	f
 drawSurroundingBorder	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	105;"	f
-drawUI	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	29;"	f
+drawUI	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	117;"	f
 drawUI	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	44;"	f
 drawUI	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/CustomEventDemo.hs	45;"	f
 drawUI	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/DialogDemo.hs	34;"	f
@@ -744,6 +747,7 @@ drawUi	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-
 drawUi	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/ViewportScrollDemo.hs	36;"	f
 drawUi	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/ViewportScrollbarsDemo.hs	81;"	f
 drawUi	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/VisibilityDemo.hs	60;"	f
+drawingArea	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	72;"	f
 dynBorderFromDirections	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Border.hs	157;"	f
 dynlibdir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/build/autogen/Paths_app.hs	98;"	f
 dynlibdir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	98;"	f
@@ -1101,7 +1105,7 @@ lookupViewport	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/
 lookupVtyEvent	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Keybindings/KeyDispatcher.hs	106;"	f
 lower	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/tests/Main.hs	28;"	f
 lowerRun	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/tests/Main.hs	44;"	f
-main	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	17;"	f
+main	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	26;"	f
 main	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/Setup.hs	2;"	f
 main	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	205;"	f
 main	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AttrDemo.hs	79;"	f
@@ -1141,12 +1145,15 @@ mainLoop	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/AppState.hs	
 makeEmpty	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/AppState.hs	34;"	f
 makeFieldName	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Themes.hs	344;"	f
 makeVisible	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Main.hs	663;"	f
+mandle	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	84;"	f
+mandle'	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	87;"	f
 mapAttrName	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/AttrMap.hs	213;"	f
 mapAttrNames	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/AttrMap.hs	219;"	f
 mapMaybe	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Data/IMap.hs	169;"	f
 maybeClick	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	1613;"	f
 maybeIntersperse	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	346;"	f
 maybeSelectCurrentEntry	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/FileBrowser.hs	745;"	f
+menu	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	50;"	f
 mergeWithDefault	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/AttrMap.hs	130;"	f
 meta	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Keybindings/KeyConfig.hs	243;"	f
 middleLayer	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/LayerDemo.hs	62;"	f
@@ -1181,6 +1188,7 @@ newTheme	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/sr
 newVtyContext	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Main.hs	324;"	f
 newVtyContextFrom	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Main.hs	320;"	f
 nextAction	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Internal.hs	272;"	f
+normaliseComplex	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	63;"	f
 normalizeKey	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Keybindings/Normalize.hs	12;"	f
 nsPerMs	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation/Clock.hs	60;"	f
 null	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Data/IMap.hs	87;"	f
@@ -1454,6 +1462,7 @@ theApp	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-
 theApp	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/SuspendAndResumeDemo.hs	60;"	f
 theApp	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/TabularListDemo.hs	136;"	f
 theBaseAttr	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/ProgressBarDemo.hs	99;"	f
+theMap	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	43;"	f
 theMap	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AttrDemo.hs	60;"	f
 theMap	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/DialogDemo.hs	55;"	f
 theMap	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/EditDemo.hs	71;"	f
@@ -1479,6 +1488,7 @@ tickThreadBody	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/
 timeToMs	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation/Clock.hs	55;"	f
 titleAttr	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/BorderDemo.hs	72;"	f
 toPassword	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Forms.hs	683;"	f
+toRGB	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	93;"	f
 toggleAnimationFromConfig	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	157;"	f
 toggleSelected	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/FileBrowser.hs	731;"	f
 topLeftCorner	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	350;"	f

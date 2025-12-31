@@ -22,6 +22,7 @@ library
   build-depends:
       base
     , containers
+    , linear
     , microlens
     , microlens-mtl
     , microlens-th
@@ -40,6 +41,7 @@ executable app
     , base
     , brick
     , containers
+    , linear
     , microlens
     , microlens-mtl
     , microlens-th
@@ -61,6 +63,7 @@ test-suite spec
       base
     , containers
     , hedgehog
+    , linear
     , microlens
     , microlens-mtl
     , microlens-th
